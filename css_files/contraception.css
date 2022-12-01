@@ -1,0 +1,13 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+body {
+    /* background-color: #FF0A54; */
+    background-image: url(../img_files/IMG_background.png);
+    margin: 0 15%;
+    margin-top: 100px;
+    padding: 0;
+}
