@@ -1,0 +1,118 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: #F7CAD0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url("../img_files/IMG_background.png");
+    margin: 0 15%;
+    margin-top: 100px;
+    padding: 0;
+}
+
+/* Card */
+section.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #A4133C;
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    transition:all 1s;
+}
+.card-img {
+    height: 250px;
+}
+.card-title {
+    font-size: 3rem;
+    text-align: center;
+}
+.card-img,
+.card-title {
+    transform: translateY(-4rem);
+    transition:all 1s;
+}
+.card-data {
+    opacity: 0;
+    transform: translateY(-8rem);
+    transition:all 1s;
+}
+
+
+.card:hover {
+    height: 400px;
+}
+.card:hover .card-img {
+    transform: translateY(-7.5rem) rotate(-70deg);
+}
+.card:hover .card-data {
+    transform: translateY(-11rem);
+    opacity: 1;
+}
+.card:hover .card-title {
+    transform: translateY(-9rem);
+    font-size: 3rem;
+}
+
+.card-button {
+    background-color: #FF5C8A;
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 900;
+    transition:all .5s;
+}
+.card-button:hover {
+    background-color: #FF0A54;
+}
+
+.modal-VIH {
+    transition:all 2s;
+    position: fixed;
+    background-color: #C9184A;
+    left: 15vw;
+    top: 10vh;
+    display: none;
+    border-radius: 25px;
+    transition:all 2s;
+    width: 0vw;
+    height: 0vh;
+}
+.active {
+    transform: scale(1.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 80vh;
+}
+.modal-VIH p {
+    width: 60vw;
+    transition:all 2s;
+    font-size: 10px;
+}
+.modal-VIH:hover p{
+    font-size: 22px;
+}
+.modal-VIH #modal-close-VIH {
+    cursor: pointer;
+    background-color: #F7CAD0;
+    color: black;
+    padding: 8px 10px;
+    border-radius: 50px;
+    transition:all 4s;
+}
+
+.modal-VIH #modal-close-VIH:hover {
+    transform: rotate(180deg);
+}
