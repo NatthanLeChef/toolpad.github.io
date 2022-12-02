@@ -110,9 +110,4 @@ section.container {
     color: black;
     padding: 8px 10px;
     border-radius: 50px;
-    transition:all 4s;
-}
-
-.modal-VIH #modal-close-VIH:hover {
-    transform: rotate(180deg);
 }
