@@ -263,7 +263,7 @@ nav{
     transform: rotate(-45);
     opacity: 60%;
     left: 55%;
-    animation: animatetriangleright 3s ease infinite;
+    animation: animatetriangleright 4s ease infinite;
 }
 
 @keyframes animatetriangleright {
