@@ -12,6 +12,13 @@ body {
     margin-top: 100px;
     padding: 0;
 }
+header>a{
+    display: flex;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+}
 
 /* Card */
 section.container {

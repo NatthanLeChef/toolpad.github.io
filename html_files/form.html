@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Formulaire en HTML5</title>
+    <link rel="stylesheet" type="text/css" href="../css_files/form_css.css" />
+</head>
+
+
+<body>
+
+    <header>
+    <a href="../html_files/home.html">Accueil</a>
+</header>
+    <main>
+        <div id="form1">
+            <form method="get" action="url" target="">
+
+
+
+                <label id="label">Genre</label>
+                <div class="box">
+                    <input id="element" list="Monsieur" value="" placeholder="Monsieur" />
+                    <datalist id="Monsieur">
+                        <option value="Monsieur">
+                        <option value="Madame">
+                    </datalist>
+                </div>
+
+               
+                <label id="label">Nom</label>
+                <div class="box">
+
+                    <input id="element" type="text" value="" placeholder="MACRON" />
+                </div>
+              
+                <label id="label">Prénom</label>
+                <div class="box">
+
+                    <input id="element" type="text" value="" placeholder="Emmanuel" />
+                </div>
+               
+                <label id="label">Age</label>
+                <div class="box">
+
+                    <input id="element" type="text" value="" placeholder="49" cols="30" />
+                </div>
+               
+                <label id="label"> Numéro de téléphone</label>
+                <div class="box">
+
+                    <input id="element" type="tel" placeholder="06 02 69 24 81"
+                        pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required>
+                </div>
+              
+                <label id="label">Entrez votre email :</label>
+                <div class="box">
+
+                    
+                    <input id="element" type="text" pattern=".+@"  placeholder="emmanuel..."
+                        required>
+                </div>
+              
+
+
+
+
+                <a href="#">
+                    <span>Valider</span>
+                    <div class="liquid"></div>
+                </a>
+
+
+
+
+
+            </form>
+
+        </div>
+    </main>
+
+
+</body>
