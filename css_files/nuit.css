@@ -1,0 +1,98 @@
+h1{
+	font-size: 100px;
+}
+.wrapper h3{
+	background-color: yellow;
+	color: aqua;
+}
+.wrapper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+body
+{
+	background: #a4133c;
+}
+.neon {  
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	size: 15em;
+	color: rgb(209, 70, 151);
+	text-shadow:  0 0 7px rgb(196, 75, 190), 
+			 0 0 10px rgb(207, 71, 155), 
+			 0 0 42px rgb(230, 18, 124),   
+			 0 0 77px rgb(230, 18, 124), 
+			 0 0 100px rgb(230, 18, 124) 
+
+}
+.container {
+	margin: 100px;
+	display: inline-flex;
+}
+.card {
+	display: flex;
+	height: 280px;
+	width: 200px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+	box-shadow: -1rem 0 3rem #000;
+	transition: 0.4s ease-out;
+	position: relative;
+	left: 0px;
+	color: #fff;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
+.card::before {
+	content: "";
+	width: 80%;
+	height: 50%;
+	display: block;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	position: absolute;
+	z-index: -1;
+	border-radius: 10px;
+}
+.card::after {
+	content: "";
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	border: 1px solid rgb(255 255 255 / 50%);
+	border-radius: 10px;
+	z-index: -1;
+}
+.card:not(:first-child) {
+	margin-left: -50px;
+}
+.card:hover {
+	transform: translateY(-20px);
+	transition: 0.4s ease-out;
+}
+.card:hover ~ .card {
+	position: relative;
+	left: 50px;
+	transition: 0.4s ease-out;
+}
+.nature .card:nth-of-type(1) {
+	background: url('../img_files/transmission.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.nature .card:nth-of-type(2) {
+	background: url('../img_files/symptomes.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.nature .card:nth-of-type(3) {
+	background: url('../img_files/traitement.jpg');
+	background-size: cover;
+	background-position: center;
+}
