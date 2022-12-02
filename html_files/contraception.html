@@ -20,11 +20,38 @@
 
             <div class="card-data">
                 <p class="card-desc">Maladie très grave d'origine virale, caractérisée par une chute brutale des défenses immunitaires de l'organisme. Existe-t-il un moyen de contraception permettant de s'en protéger ?                </p>
-                <a href="#" class="card-button" id="btn_VIH">+ d'infos</a>
+                <a href="#" class="card-button" id="card-button-VIH">+ d'infos</a>
             </div>
         </div>
     </section>
+
+    <section class="modal">
+        <div class="modal-VIH" id="modal-VIH">
+            <div class="modal-content">
+              <span id="modal-close-VIH">&times;</span>
+              <p>
+                De nombreux moyens de contraception ont fait leurs apparitions ont fait leurs apparitions ces dernières années.</br>
+Tous ces moyens nouveaux utilisent différentes techniques. En allant du simple cachet hormonal avec la pilule, au moyen mécanique comme le stérilet. Il n'existe pas une façon qui n'est pas à considérer.</br>
+Cependant, le VIH comme toutes les IST ont un problème majeur, elles se transmettent même en utilisant un moyen de contraception hormonal. A partir du moment où il y a rapport et que les muqueuses sexuels des deux partenaires rentrent en contact, il peut y avoir contamination.</br>
+Pour éviter cela, deux moyens existent, le préservatif masculin et le préservatif féminin. Seul ces deux méthodes permettent un rapport sans contact directs des muqueuses sexuels et donc sans transfert d'aucune IST à 100%.
+              </p>
+        </div>
+          
+        </div>
     </section>
+
+    <script>
+        const modalViewsVIH = document.getElementById('modal-VIH'),
+            modalBtnsVIH = document.getElementById('card-button-VIH'),
+            modalCloseVIH = document.getElementById('modal-close-VIH');
+        modalBtnsVIH.addEventListener("click", () => {
+            modalViewsVIH.classList.add("active");
+        })
+        modalCloseVIH.addEventListener("click", () => {
+            modalViewsVIH.classList.remove("active");
+        })
+
+    </script>
 
 </body>
 </html>

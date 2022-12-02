@@ -14,7 +14,7 @@ body {
 }
 
 /* Card */
-section .container {
+section.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,44 +76,43 @@ section .container {
     background-color: #FF0A54;
 }
 
-
-
-
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
+.modal-VIH {
+    transition:all 2s;
+    position: fixed;
+    background-color: #C9184A;
+    left: 15vw;
+    top: 10vh;
+    display: none;
+    border-radius: 25px;
+    transition:all 2s;
+    width: 0vw;
+    height: 0vh;
+}
+.active {
+    transform: scale(1.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 80vh;
+}
+.modal-VIH p {
+    width: 60vw;
+    transition:all 2s;
+    font-size: 10px;
+}
+.modal-VIH:hover p{
+    font-size: 22px;
+}
+.modal-VIH #modal-close-VIH {
     cursor: pointer;
-  }
+    background-color: #F7CAD0;
+    color: black;
+    padding: 8px 10px;
+    border-radius: 50px;
+    transition:all 4s;
+}
+
+.modal-VIH #modal-close-VIH:hover {
+    transform: rotate(180deg);
+}
