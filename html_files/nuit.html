@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" author="Poney Riders">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titre de base</title>
+	<link rel="stylesheet" type="text/css" href="../css_files/nuit.css"/>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			min-height: 100vh;
+			display: block;
+			justify-content: center;
+			align-items: center;
+			background: #410329;
+		}
+
+		
+
+		div{
+			width: 200px;
+			height: 200px;
+			box-shadow: 16px 14px 20px #0000008c;
+			border-radius: 10px;
+			position: relative;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 100px 0;
+		}
+		div::before{
+			content: "";
+			width: 150%;
+			height: 150%;
+			position: absolute;
+			animation: rotate 2s linearinfinite;
+		}
+		div::after{
+			content: "VIH";
+			width: 190px;
+			height: 190px;
+			background: #101010;
+			position: absolute;
+			border-radius: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #ff0052;
+			font-size: larger;
+			letter-spacing: 5px;
+			box-shadow: inset 20px 20px 20px #0000008c
+		}
+		@keyframes rotate {
+			0%{
+				transform: rotate(0deg);
+			}
+			100%{
+				transform: rotate(-360deg);
+			}
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="neon">
+		<h1>VIH</h1>
+	  </div>
+	<div class="wrapper">
+		<div class="container nature">
+			<a href="../html_files/transmission.html" class="card">
+				<h3>Header</h3>
+				<P>Card content</P>
+			</a>
+			<a href="../html_files/" class="card">
+				<h3>Header</h3>
+			    <P>Card content</P>
+			</a>
+			<a href="../img_files/traitement.jpg" class="card">
+				<h3>Header</h3>
+				<P>Card content</P>
+			</a>
+		</div>
+	</div>
+	
+</body>
