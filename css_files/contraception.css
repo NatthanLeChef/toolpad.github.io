@@ -18,17 +18,35 @@ section.container {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 70px;
+    height: 600px;
 }
 
 .card {
     background-color: #A4133C;
     padding: 20px;
-    width: 250px;
-    height: 300px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     transition:all 1s;
+}
+.contraception .card {
+    width: 250px;
+    height: 350px;
+}
+.lutte .card {
+    width: 250px;
+    height: 300px;
+}
+.card-img.preservatif_feminin {
+    height: min-content;
+    width: fit-content;
+    transform: translateY(-9rem);
+}
+.card-img.preservatif_feminin,
+.card-title.preservatif_feminin {
+    transform: translateY(-9rem);
 }
 .card-img {
     height: 250px;
@@ -48,11 +66,16 @@ section.container {
     transition:all 1s;
 }
 
-
-.card:hover {
+.contraception .card:hover {
+    height: 550px;
+}
+.lutte .card:hover {
     height: 400px;
 }
 .card:hover .card-img {
+    transform: translateY(-7.5rem);
+}
+.card:hover .card-img.lutte {
     transform: translateY(-7.5rem) rotate(-70deg);
 }
 .card:hover .card-data {
@@ -76,6 +99,15 @@ section.container {
     background-color: #FF0A54;
 }
 
+
+.active {
+    transform: scale(1.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 80vh;
+}
 .modal-VIH {
     transition:all 2s;
     position: fixed;
@@ -88,14 +120,6 @@ section.container {
     width: 0vw;
     height: 0vh;
 }
-.active {
-    transform: scale(1.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70vw;
-    height: 80vh;
-}
 .modal-VIH p {
     width: 60vw;
     transition:all 2s;
@@ -105,6 +129,62 @@ section.container {
     font-size: 22px;
 }
 .modal-VIH #modal-close-VIH {
+    cursor: pointer;
+    background-color: #F7CAD0;
+    color: black;
+    padding: 8px 10px;
+    border-radius: 50px;
+}
+
+.modal-PreservatifM {
+    transition:all 2s;
+    position: fixed;
+    background-color: #C9184A;
+    left: 15vw;
+    top: 10vh;
+    display: none;
+    border-radius: 25px;
+    transition:all 2s;
+    width: 0vw;
+    height: 0vh;
+}
+.modal-PreservatifM p {
+    width: 60vw;
+    transition:all 2s;
+    font-size: 10px;
+}
+.modal-PreservatifM:hover p{
+    font-size: 22px;
+}
+.modal-PreservatifM #modal-close-PreservatifM {
+    cursor: pointer;
+    background-color: #F7CAD0;
+    color: black;
+    padding: 8px 10px;
+    border-radius: 50px;
+}
+
+.modal-PreservatifF {
+    transition:all 2s;
+    position: fixed;
+    background-color: #C9184A;
+    left: 15vw;
+    top: 10vh;
+    display: none;
+    border-radius: 25px;
+    transition:all 2s;
+    width: 0vw;
+    height: 0vh;
+}
+.modal-PreservatifF p {
+    width: 60vw;
+    transition:all 2s;
+    font-size: 10px;
+}
+.modal-PreservatifF:hover p{
+    font-size: 22px;
+}
+.modal-PreservatifF #modal-close-PreservatifM {
     cursor: pointer;
     background-color: #F7CAD0;
     color: black;

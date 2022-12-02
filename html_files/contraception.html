@@ -12,20 +12,29 @@
 
     </nav>
 
-    <h1>Moyen de contraception</h1>
-    <section class="container">
+    <h1>Moyen de contraception le</h1>
+    <section class="container contraception">
         <div class="card">
             <img src="../img_files/IMG_preservatif.png" class="card-img">
-            <h1 class="card-title">Le préservatif</h1>
+            <h1 class="card-title">Préservatif<br>Masculin</h1>
 
             <div class="card-data">
                 <p class="card-desc">Maladie très grave d'origine virale, caractérisée par une chute brutale des défenses immunitaires de l'organisme. Existe-t-il un moyen de contraception permettant de s'en protéger ?                </p>
-                <a href="#" class="card-button" id="card-button-VIH">+ d'infos</a>
+                <a href="#" class="card-button" id="card-button-PreservatifM">+ d'infos</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../img_files/IMG_preservatif_feminin.png" class="card-img preservatif_feminin">
+            <h1 class="card-title preservatif_feminin">Préservatif<br>Feminin</h1>
+
+            <div class="card-data">
+                <p class="card-desc">Maladie très grave d'origine virale, caractérisée par une chute brutale des défenses immunitaires de l'organisme. Existe-t-il un moyen de contraception permettant de s'en protéger ?                </p>
+                <a href="#" class="card-button" id="card-button-PreservatifF">+ d'infos</a>
             </div>
         </div>
     </section>
     <h1><span>LE</span> moyen de lutte contre le</h1>
-    <section class="container">
+    <section class="container lutte">
         <div class="card">
             <img src="../img_files/IMG_virus.png" class="card-img">
             <h1 class="card-title">VIH</h1>
@@ -42,17 +51,60 @@
             <div class="modal-content">
               <span id="modal-close-VIH">&times;</span>
               <p>
-                De nombreux moyens de contraception ont fait leurs apparitions ont fait leurs apparitions ces dernières années.</br>
-Tous ces moyens nouveaux utilisent différentes techniques. En allant du simple cachet hormonal avec la pilule, au moyen mécanique comme le stérilet. Il n'existe pas une façon qui n'est pas à considérer.</br>
-Cependant, le VIH comme toutes les IST ont un problème majeur, elles se transmettent même en utilisant un moyen de contraception hormonal. A partir du moment où il y a rapport et que les muqueuses sexuels des deux partenaires rentrent en contact, il peut y avoir contamination.</br>
+                De nombreux moyens de contraception ont fait leurs apparitions ont fait leurs apparitions ces dernières années.</br></br>
+Tous ces moyens nouveaux utilisent différentes techniques. En allant du simple cachet hormonal avec la pilule, au moyen mécanique comme le stérilet. Il n'existe pas une façon qui n'est pas à considérer.</br></br>
+Cependant, le VIH comme toutes les IST ont un problème majeur, elles se transmettent même en utilisant un moyen de contraception hormonal. A partir du moment où il y a rapport et que les muqueuses sexuels des deux partenaires rentrent en contact, il peut y avoir contamination.</br></br>
+Pour éviter cela, deux moyens existent, le préservatif masculin et le préservatif féminin. Seul ces deux méthodes permettent un rapport sans contact directs des muqueuses sexuels et donc sans transfert d'aucune IST à 100%.
+              </p>
+            </div>
+        </div>
+    </section>
+    <section class="modal">
+        <div class="modal-PreservatifM" id="modal-PreservatifM">
+            <div class="modal-content">
+              <span id="modal-close-PreservatifM">&times;</span>
+              <p>
+                De nombreux moyens de contraception ont fait leurs apparitions ont fait leurs apparitions ces dernières années.</br></br>
+Tous ces moyens nouveaux utilisent différentes techniques. En allant du simple cachet hormonal avec la pilule, au moyen mécanique comme le stérilet. Il n'existe pas une façon qui n'est pas à considérer.</br></br>
+Cependant, le VIH comme toutes les IST ont un problème majeur, elles se transmettent même en utilisant un moyen de contraception hormonal. A partir du moment où il y a rapport et que les muqueuses sexuels des deux partenaires rentrent en contact, il peut y avoir contamination.</br></br>
 Pour éviter cela, deux moyens existent, le préservatif masculin et le préservatif féminin. Seul ces deux méthodes permettent un rapport sans contact directs des muqueuses sexuels et donc sans transfert d'aucune IST à 100%.
               </p>
         </div>
-          
+    </section>
+    <section class="modal">
+        <div class="modal-PreservatifF" id="modal-PreservatifF">
+            <div class="modal-content">
+              <span id="modal-close-PreservatifF">&times;</span>
+              <p>
+                De nombreux moyens de contraception ont fait leurs apparitions ont fait leurs apparitions ces dernières années.</br></br>
+Tous ces moyens nouveaux utilisent différentes techniques. En allant du simple cachet hormonal avec la pilule, au moyen mécanique comme le stérilet. Il n'existe pas une façon qui n'est pas à considérer.</br></br>
+Cependant, le VIH comme toutes les IST ont un problème majeur, elles se transmettent même en utilisant un moyen de contraception hormonal. A partir du moment où il y a rapport et que les muqueuses sexuels des deux partenaires rentrent en contact, il peut y avoir contamination.</br></br>
+Pour éviter cela, deux moyens existent, le préservatif masculin et le préservatif féminin. Seul ces deux méthodes permettent un rapport sans contact directs des muqueuses sexuels et donc sans transfert d'aucune IST à 100%.
+              </p>
         </div>
     </section>
 
     <script>
+        const modalViewsPreservatifF = document.getElementById('modal-PreservatifF'),
+            modalBtnsPreservatifF = document.getElementById('card-button-PreservatifF'),
+            modalClosePreservatifF = document.getElementById('modal-close-PreservatifF');
+        modalBtnsPreservatifF.addEventListener("click", () => {
+            modalViewsPreservatifF.classList.add("active");
+        })
+        modalClosePreservatifF.addEventListener("click", () => {
+            modalViewsPreservatifF.classList.remove("active");
+        })
+
+        const modalViewsPreservatifM = document.getElementById('modal-PreservatifM'),
+            modalBtnsPreservatifM = document.getElementById('card-button-PreservatifM'),
+            modalClosePreservatifM = document.getElementById('modal-close-PreservatifM');
+        modalBtnsPreservatifM.addEventListener("click", () => {
+            modalViewsPreservatifM.classList.add("active");
+        })
+        modalClosePreservatifM.addEventListener("click", () => {
+            modalViewsPreservatifM.classList.remove("active");
+        })
+
         const modalViewsVIH = document.getElementById('modal-VIH'),
             modalBtnsVIH = document.getElementById('card-button-VIH'),
             modalCloseVIH = document.getElementById('modal-close-VIH');
